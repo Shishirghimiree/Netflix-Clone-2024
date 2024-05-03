@@ -264,7 +264,52 @@ input[type="radio"] {
 
 /* Media Queries Start Here */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 965px) {
+  .logo {
+    width: 126px;
+  }
+  nav button {
+    padding: 7px 20px;
+  }
+  nav .language-btn {
+    padding: 6px 18px;
+  }
+  .header {
+    height: 80vh;
+  }
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 20px;
+  }
+  .header-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 800px;
+  }
+  .email-signup input {
+    margin-left: 20px;
+  }
+  .email-signup button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .text-col,
+  .image-col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .row:nth-child(2),
+  .row:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .logo {
     width: 100px;
   }
@@ -327,50 +372,5 @@ input[type="radio"] {
   .footer {
     /* margin: 10px; */
     padding: 15px;
-  }
-}
-
-@media screen and (max-width: 965px) {
-  .logo {
-    width: 126px;
-  }
-  nav button {
-    padding: 7px 20px;
-  }
-  nav .language-btn {
-    padding: 6px 18px;
-  }
-  .header {
-    height: 60vh;
-  }
-  .header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding-top: 20px;
-  }
-  .header-content h1 {
-    font-size: 32px;
-    line-height: 40px;
-    max-width: 800px;
-  }
-  .email-signup input {
-    margin-left: 20px;
-  }
-  .email-signup button {
-    font-size: 12px;
-    padding: 10px 20px;
-  }
-  .text-col,
-  .image-col {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .row:nth-child(2),
-  .row:nth-child(4) {
-    flex-direction: column-reverse;
   }
 }
